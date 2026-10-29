@@ -10,7 +10,7 @@ v = np.array((1, 1))
 #<2, 1><0, 1>cos(2)
 
 dotp = u@v
-print(dotp)
+print(f'dot product: {dotp}')
 
 A = np.array(((1, 3), (2, 4), (5, 6)))
 B = np.array(((2, 1, 4), (3, 2, 1)))
@@ -24,6 +24,6 @@ print(f'B@A : {B@A}')
 
 C = np.array(((1, 3, 2), (2, 4, 1), (5, 6, 5)))
 C_inv = linalg.inv(C)
-print(C)
-print(C_inv)
-print(C_inv@C)
+print(f'C: {C}')
+print(f'inverse: {C_inv}')
+print(f'dot product: {C_inv@C}')
